@@ -23,14 +23,14 @@ public class TestCases_T01 extends TestBase {
 	public void setup() {
 		initialization();
 		elementsPage= new ElementsPage();
+		elementsPage.selectCard("Elements");
 		
 	}
 	
 	
-	@Test
+	@Test(priority= 1, enabled= false)
 	public void textBoxTestCase(){
 		log.info("**********************starting the test case***************");
-		elementsPage.selectCard("Elements");
 		elementsPage.selectItem("Text Box");
 		elementsPage.enterUserDetails("Abhishek", "Testuser1@gmail.com", "Baker Street N01011");
 		
@@ -40,6 +40,10 @@ public class TestCases_T01 extends TestBase {
 		log.info("**********************Ending the test case***************");
 	}
 	
+	@Test(priority= 1, enabled= true)
+	public void checkBoxTestCase() {
+		elementsPage.selectItem("Check Box");
+	}
 	
 
 }

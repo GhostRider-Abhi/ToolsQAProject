@@ -52,6 +52,7 @@ public class ElementsPage  extends TestBase{
 		TestUtil.scrollIntoView(submitButton);
 		submitButton.click();
 		
+		
 	}
 
 }
