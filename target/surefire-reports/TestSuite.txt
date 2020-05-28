@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 2, Errors: 0, Skipped: 4, Time elapsed: 1.868 sec <<< FAILURE!
+setup(com.qa.testcases.EclipseTestCase)  Time elapsed: 1.576 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.qa.base.TestBase.initialization(TestBase.java:41)
+	at com.qa.testcases.EclipseTestCase.setup(EclipseTestCase.java:24)
+
+setup(com.qa.testcases.SeleniumTestCase)  Time elapsed: 1.606 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.qa.base.TestBase.initialization(TestBase.java:41)
+	at com.qa.testcases.SeleniumTestCase.setup(SeleniumTestCase.java:23)
+
