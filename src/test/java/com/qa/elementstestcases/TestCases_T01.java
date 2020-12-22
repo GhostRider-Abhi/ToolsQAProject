@@ -43,6 +43,14 @@ public class TestCases_T01 extends TestBase {
 	@Test(priority= 1, enabled= true)
 	public void checkBoxTestCase() {
 		elementsPage.selectItem("Check Box");
+		elementsPage.expandCheckBox();
+		elementsPage.selectByText("Angular");
+		elementsPage.selectByText("Private");
+		elementsPage.selectByText("Excel File.doc");
+		
+		Assert.assertEquals(elementsPage.getSelectedItems(0), "angular");
+		Assert.assertEquals(elementsPage.getSelectedItems(1), "private");
+		Assert.assertEquals(elementsPage.getSelectedItems(2), "excelFile");
 	}
 	
 
